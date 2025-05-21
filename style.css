@@ -5,61 +5,12 @@
     scrollbar-width: none;
     font-family: "Poppins", serif;
 }
-/* nav{
-    height: 14vh;
-    width: 100vw;
-    border: 2px solid white;
-    display: flex;
-    background-color: #102044;
-
-
-} */
-/* #nav_one{
-  /* border: 1px solid green; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 30%;
-    gap: 30px;
-}
-#nav_two{
-    display: flex;
-    flex-basis: 80%;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding-left: 100px;
-} */
-/* #nav_one>img{
-    height: 100px;
-    width: 100px;
-}
-#nav_two>input{
-    border-radius: 30px;
-    height: 40px;
-    width: 400px;
-    border: 1px solid #999;
-    outline: 1px solid #999;
-    padding-left: 20px;
-} */
 
 #news_container{
     
     height: 100%;
 }
-/* #nav_two>button{
-    position: relative;
-    right: 80px;
-    height: 40px;
-    width: 60px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border: none;
-    background: transparent;
-} */
-/* #nav_two>button>i{
-    font-size: 16px;
-} */
+
 
 #bg_img{
     height: 100%;
@@ -182,3 +133,39 @@ nav {
     object-fit: cover;
     border-radius: 10px;
 }
+   /* News Container Styles */
+#news_container {
+            max-width: 100%;
+            margin: 2rem auto;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(241, 241, 241);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+        
+#news_container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+ }
+        
+#news_container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+ #news_container img:hover {
+            transform: scale(1.02);
+        }
+        
+    
+        
+#news_container:hover::before {
+            opacity: 0.9;
+        }
